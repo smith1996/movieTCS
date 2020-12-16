@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CastCell" id="GhN-cu-1jd" customClass="CastCell" customModule="Movies" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="215" height="300"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="215" height="300"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Actor" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mWa-zt-8la">
+                        <rect key="frame" x="0.0" y="265" width="215" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="25" id="ST0-dB-gMh"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default-placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="KA5-fZ-saf">
+                        <rect key="frame" x="0.0" y="0.0" width="215" height="260"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="KdL-4Z-PtR"/>
+            <constraints>
+                <constraint firstItem="mWa-zt-8la" firstAttribute="top" secondItem="KA5-fZ-saf" secondAttribute="bottom" constant="5" id="8nP-M2-Xz8"/>
+                <constraint firstAttribute="trailing" secondItem="KA5-fZ-saf" secondAttribute="trailing" id="Ayq-5B-8eM"/>
+                <constraint firstAttribute="trailing" secondItem="mWa-zt-8la" secondAttribute="trailing" id="INz-6K-5Ep"/>
+                <constraint firstItem="KA5-fZ-saf" firstAttribute="top" secondItem="GhN-cu-1jd" secondAttribute="top" id="Sfi-vH-NQS"/>
+                <constraint firstAttribute="bottom" secondItem="mWa-zt-8la" secondAttribute="bottom" constant="10" id="gnY-bP-lLM"/>
+                <constraint firstItem="KA5-fZ-saf" firstAttribute="leading" secondItem="GhN-cu-1jd" secondAttribute="leading" id="pWF-Oo-Mw6"/>
+                <constraint firstItem="mWa-zt-8la" firstAttribute="leading" secondItem="GhN-cu-1jd" secondAttribute="leading" id="ty5-z9-Id0"/>
+            </constraints>
+            <size key="customSize" width="445" height="65"/>
+            <connections>
+                <outlet property="actorImageView" destination="KA5-fZ-saf" id="jvq-Bs-FsW"/>
+                <outlet property="nameLabel" destination="mWa-zt-8la" id="dOH-CP-GfE"/>
+            </connections>
+            <point key="canvasLocation" x="423.91304347826087" y="155.35714285714286"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="default-placeholder" width="750" height="750"/>
+    </resources>
+</document>
